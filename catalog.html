@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <!-- Меню навигации по сайту -->
+        <nav class="main-navigation">
+            <a class="main-header-logo" href="index.html">
+                <img class="logo" sarc="img/logo.svg" width="" height="" alt="Логотип">
+            </a>
+
+            <ul class="site-navigation">
+                <li><a href="#">Студия</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li class="site-navigation-current"><a href="#">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+
+            <!-- Тут только корзина, не уверен что надо делать список -->
+            <ul class="user-navigation">
+                <li class="cart">Корзина</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
+
+        <!-- Блок фильтров -->
+        <section class="filters">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <!-- Форма -->
+        </section>
+
+        <!-- Раздел с товарами -->
+        <section class="catalog">
+            <h2 class="visually-hidden">Список готовых шаблонов</h2>
+
+            <!-- Тут будет сортировка -->
+            <ul class="catalog-list">
+                <!-- 1 -->
+                <li class="catalog-item">
+                    <div></div>
+                    <img src="#" alt="Sedona">
+                    <!-- Непонятно как правильно реализовать этот блок,
+                     особенно именование классов, аналогично для 
+                     остальных элементов списка -->
+                    <div class="activ-block">
+                        <h3>
+                            <a href="#">
+                                <span>Sedona</span>
+                            </a>
+                        </h3>
+                        <p>Информационный сайт для туристов</p>
+                        <a class="button" href="#">9 900 руб.</a>
+                    </div>
+                </li>
+                <!-- 2 -->
+                <li class="catalog-item">
+                    <div></div>
+                    <img src="#" alt="Pink App">
+                    <div class="activ-block">
+                        <h3>
+                            <a href="#">
+                                <span>Pink App</span>
+                            </a>
+                        </h3>
+                        <p>Продуктовый лендинг приложения для iOS и Android</p>
+                        <a class="button" href="#">9 900 руб.</a>
+                    </div>
+                </li>
+                <!-- 3 -->
+                <li class="catalog-item">
+                    <div></div>
+                    <img src="#" alt="Barbershop">
+                    <div class="activ-block">
+                        <h3>
+                            <a href="#">
+                                <span>Barbershop</span>
+                            </a>
+                        </h3>
+                        <p>Сайт салоны красоты. Для мужчин, да.</p>
+                        <a class="button" href="#">9 900 руб.</a>
+                    </div>
+                </li>
+                <!-- 4 -->
+                <li class="catalog-item">
+                    <div></div>
+                    <img src="#" alt="Mishka">
+                    <div class="activ-block">
+                        <h3>
+                            <a href="#">
+                                <span>Mishka</span>
+                            </a>
+                        </h3>
+                        <p>Интернет-магазин вязаных игрушек</p>
+                        <a class="button" href="#">9 900 руб.</a>
+                    </div>
+                </li>
+                <!-- 5 -->
+                <li class="catalog-item">
+                    <div></div>
+                    <img src="#" alt="A Plus">
+                    <div class="activ-block">
+                        <h3>
+                            <a href="#">
+                                <span>A Plus</span>
+                            </a>
+                        </h3>
+                        <p>Лендинг курсов повышения квалификации</p>
+                        <a class="button" href="#">9 900 руб.</a>
+                    </div>
+                </li>
+                <!-- 6 -->
+                <li class="catalog-item">
+                    <div></div>
+                    <img src="#" alt="Кваст">
+                    <div class="activ-block">
+                        <h3>
+                            <a href="#">
+                                <span>Кваст</span>
+                            </a>
+                        </h3>
+                        <p>Промо-сайт производителя крафтового кваса</p>
+                        <a class="button" href="#">9 900 руб.</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+            </ul>
+        </section>
+
+
+    </main>
+
+    <footer class="main-footer">
+
+        <!-- Контакты и карта -->
+        <section class="contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+            <img src="" alt="Мы на карте">
+            <div>
+                <b>NЁRDS DESIGN STUDIO</b>
+                <p>191186, Санкт-Петербург,<br>
+                    ул. Б. Конюшенная, д. 19/8</p>
+                <p>тел. +7 (812) 275-75-75</p>
+                <a class="button" href="#">Напишите нам</a>
+            </div>
+        </section>
+
+        <!-- Подумать над классами -->
+        <section class="footer">
+            <div class="footer-social">
+                <ul>
+                    <li>
+                        <a class="social-button" href="#">Вконтакте</a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="#">Фейсбук</a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="#">Инстаграмм</a>
+                    </li>
+                </ul>
+            </div>
+            <b>Давайте дружить, это выгодно!</b>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+
+    </footer>
+
+    <!-- Скрытые окна -->
+    <section class="modal modal-feedback">
+        <h2>Напишите нам</h2>
+        <span class="modal-close">x</span>
+        <!-- Форма -->
+        <a class="button" href="">Отправить</a>
+    </section>
+
+</body>
+
+</html>
