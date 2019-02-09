@@ -24,7 +24,11 @@
             </ul>
 
             <ul class="user-navigation">
-                <li class="cart">Корзина</li>
+                <li>
+                    <a class="cart" href="">
+                        Корзина
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -54,9 +58,9 @@
             </ul>
 
             <div class="toggles">
-                <button class="toggles-item"><span class="visually-hidden">Слайд 1</span></button>
-                <button class="toggles-item"><span class="visually-hidden">Слайд 2</span></button>
-                <button class="toggles-item"><span class="visually-hidden">Слайд 3</span></button>
+                <button class="toggles-item" type="button"><span class="visually-hidden">Слайд 1</span></button>
+                <button class="toggles-item" type="button"><span class="visually-hidden">Слайд 2</span></button>
+                <button class="toggles-item" type="button"><span class="visually-hidden">Слайд 3</span></button>
             </div>
         </section>
         <!-- Конец слайдера -->
@@ -92,9 +96,9 @@
             <div class="info-services">
                 <p>Выполняем заказы на разработку:</p>
                 <ul class="info-services-list">
-                    <li>Веб-сайтов любой сложности</li>
-                    <li>Мобильных приложений для iOS и Android</li>
-                    <li>Слайдшоу и видео для корпоративных презентаций</li>
+                    <li class="info-services-item">Веб-сайтов любой сложности</li>
+                    <li class="info-services-item">Мобильных приложений для iOS и Android</li>
+                    <li class="info-services-item">Слайдшоу и видео для корпоративных презентаций</li>
                 </ul>
             </div>
         </section>
@@ -103,19 +107,19 @@
         <section class="features">
             <h2 class="visually-hidden">Преимущества</h2>
             <table class="features-table">
-                <caption class="table-headline">С 2004 года Любим точность во всем:</caption>
-                <tr class="table-row">
+                <caption class="features-table-headline">С 2004 года Любим точность во всем:</caption>
+                <tr class="features-table-row">
                     <td>
-                        146 <span class="table-percent">%</span>
+                        146 <span class="features-table-percent">%</span>
                     </td>
                     <td>
-                        100 <span class="table-percent">%</span>
+                        100 <span class="features-table-percent">%</span>
                     </td>
                     <td>
-                        50 <span class="table-percent">%</span>
+                        50 <span class="features-table-percent">%</span>
                     </td>
                 </tr>
-                <tr class="table-row">
+                <tr class="features-table-row">
                     <td>Уровень самоотдачи</td>
                     <td>Соблюдение сроков</td>
                     <td>Минимальная предоплата</td>
@@ -183,25 +187,23 @@
     <!-- Скрытые окна -->
     <section class="modal modal-feedback">
         <h2>Напишите нам</h2>
-        <span class="modal-close">x</span>
+        <button class="modal-close" type="button">x</button>
         <!-- Форма -->
-        <form class="" action="" method="POST">
+        <form class="feedback-form" action="#" method="POST">
             <p>
-                <label for="">Ваше имя:</label>
-                <input type="text" name="username">
+                <label for="username">Ваше имя:</label>
+                <input type="text" id="username" name="name" placeholder="Имя Фамилия">
             </p>
             <p>
-                <label for="">Ваш e-mail:</label>
-                <input type="email" name="useremail">
+                <label for="useremail">Ваш e-mail:</label>
+                <input type="email" id="useremail" name="email" placeholder="email@example.com">
             </p>
             <p>
-                <label for="">Текст письма:</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for="usermessage">Текст письма:</label>
+                <textarea name="message" id="usermessage" cols="30" rows="4" placeholder="В свободной форме"></textarea>
             </p>
-            <button type="submit">Отправить</button>
+            <button class="button" type="submit">Отправить</button>
         </form>
-
-        <a class="button" href="#">Отправить</a>
     </section>
 
 </body>

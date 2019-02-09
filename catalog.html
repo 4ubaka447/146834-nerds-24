@@ -17,7 +17,7 @@
             </a>
 
             <ul class="site-navigation">
-                <li><a href="#">Студия</a></li>
+                <li><a href="index.html">Студия</a></li>
                 <li><a href="#">Клиенты</a></li>
                 <li class="site-navigation-current"><a href="#">Магазин</a></li>
                 <li><a href="#">Контакты</a></li>
@@ -35,9 +35,66 @@
         <h1 class="page-title">Магазин готовых шаблонов</h1>
 
         <!-- Блок фильтров -->
-        <section class="filters">
+        <section class="catalog-filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!-- Форма -->
+
+
+            <form action="#" class="filter" method="GET">
+                <fieldset>
+                    <!-- Незаконченная часть -->
+                    <legend>Cтоимость:</legend>
+                    <label for="cost-from">От</label>
+                    <input type="text" id="cost-from" name="inside" value="0">
+
+                    <label for="cost-to">До</label>
+                    <input type="text" id="cost-to" name="out" value="15000">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input type="radio" class="visually-hidden filter-input filter-input-radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                            <label for="filter-adaptive">Адаптивная</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="radio" class="visually-hidden filter-input filter-input-radio" name="grid" value="static" id="filter-static">
+                            <label for="filter-static">Фиксированная</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="radio" class="visually-hidden filter-input filter-input-radio" name="grid" value="fluid" id="filter-fluid">
+                            <label for="filter-fluid">Резиновая</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Особенности:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="slider" id="filter-slider" checked>
+                            <label for="filter-slider">Слайдер</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="advantage" id="filter-advantage">
+                            <label for="filter-advantage">Блок преимуществ</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="news" id="filter-news" checked>
+                            <label for="filter-news">Новости</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="gallery" id="filter-gallery">
+                            <label for="filter-gallery">Галерея</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="basket" id="filter-basket">
+                            <label for="filter-basket">Корзина</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit" class="button filter-button">Показать</button>
+            </form>
         </section>
 
         <!-- Раздел с товарами -->
@@ -206,25 +263,23 @@
     <!-- Скрытые окна -->
     <section class="modal modal-feedback">
         <h2>Напишите нам</h2>
-        <span class="modal-close">x</span>
+        <button class="modal-close" type="button">x</button>
         <!-- Форма -->
-        <form class="" action="" method="POST">
+        <form class="feedback-form" action="#" method="POST">
             <p>
-                <label for="">Ваше имя:</label>
-                <input type="text" name="username">
+                <label for="username">Ваше имя:</label>
+                <input type="text" id="username" name="name" placeholder="Имя Фамилия">
             </p>
             <p>
-                <label for="">Ваш e-mail:</label>
-                <input type="email" name="useremail">
+                <label for="useremail">Ваш e-mail:</label>
+                <input type="email" id="useremail" name="email" placeholder="email@example.com">
             </p>
             <p>
-                <label for="">Текст письма:</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for="usermessage">Текст письма:</label>
+                <textarea name="message" id="usermessage" cols="30" rows="4" placeholder="В свободной форме"></textarea>
             </p>
-            <button type="submit">Отправить</button>
+            <button class="button" type="submit">Отправить</button>
         </form>
-
-        <a class="button" href="#">Отправить</a>
     </section>
 
 </body>
