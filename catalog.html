@@ -13,7 +13,7 @@
         <!-- Меню навигации по сайту -->
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
-                <img class="logo" src="img/logo-nerds.svg" width="160" height="65" alt="Логотип">
+                <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип Nerds">
             </a>
 
             <ul class="site-navigation">
@@ -45,14 +45,17 @@
             <h2 class="visually-hidden">Список готовых шаблонов</h2>
 
             <!-- Тут будет сортировка -->
+            <div class="catalog-sorting"></div>
+
             <ul class="catalog-list">
                 <!-- 1 -->
                 <li class="catalog-item">
-                    <div></div>
+                    <div class="item-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <img src="img/img-catalog-1.jpg" width="360" height="576" alt="Sedona">
-                    <!-- Непонятно как правильно реализовать этот блок,
-                     особенно именование классов, аналогично для 
-                     остальных элементов списка -->
                     <div class="activ-block">
                         <h3>
                             <a href="#">
@@ -65,7 +68,11 @@
                 </li>
                 <!-- 2 -->
                 <li class="catalog-item">
-                    <div></div>
+                    <div class="item-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <img src="img/img-catalog-2.jpg" width="360" height="576" alt="Pink App">
                     <div class="activ-block">
                         <h3>
@@ -79,7 +86,11 @@
                 </li>
                 <!-- 3 -->
                 <li class="catalog-item">
-                    <div></div>
+                    <div class="item-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <img src="img/img-catalog-3.jpg" width="360" height="576" alt="Barbershop">
                     <div class="activ-block">
                         <h3>
@@ -93,7 +104,11 @@
                 </li>
                 <!-- 4 -->
                 <li class="catalog-item">
-                    <div></div>
+                    <div class="item-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <img src="img/img-catalog-4.jpg" width="360" height="576" alt="Mishka">
                     <div class="activ-block">
                         <h3>
@@ -107,7 +122,11 @@
                 </li>
                 <!-- 5 -->
                 <li class="catalog-item">
-                    <div></div>
+                    <div class="item-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <img src="img/img-catalog-5.jpg" width="360" height="576" alt="A Plus">
                     <div class="activ-block">
                         <h3>
@@ -121,7 +140,11 @@
                 </li>
                 <!-- 6 -->
                 <li class="catalog-item">
-                    <div></div>
+                    <div class="item-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <img src="img/img-catalog-6.jpg" width="360" height="576" alt="Кваст">
                     <div class="activ-block">
                         <h3>
@@ -148,9 +171,10 @@
     <footer class="main-footer">
 
         <!-- Контакты и карта -->
+        <a name="contacts"></a>
         <section class="contacts">
             <h2 class="visually-hidden">Контакты</h2>
-            <img src="" alt="Мы на карте">
+            <img src="img/map.png" width="1440" height="416" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
             <div>
                 <b>Nёrds design studio</b>
                 <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
@@ -159,7 +183,6 @@
             </div>
         </section>
 
-        <!-- Подумать над классами -->
         <section class="footer">
             <div class="footer-social">
                 <ul>
@@ -196,12 +219,12 @@
             </p>
             <p>
                 <label for="">Текст письма:</label>
-                <input type="text" name="username">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
             </p>
-            <input type="submit" value="Отправить">
+            <button type="submit">Отправить</button>
         </form>
 
-        <a class="button" href="">Отправить</a>
+        <a class="button" href="#">Отправить</a>
     </section>
 
 </body>

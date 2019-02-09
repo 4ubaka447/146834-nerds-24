@@ -12,18 +12,17 @@
     <header class="main-header">
         <!-- Меню навигации по сайту -->
         <nav class="main-navigation">
-            <a class="main-header-logo" href="#">
-                <img class="logo" src="img/logo-nerds.svg" width="160" height="65" alt="Логотип">
+            <a class="main-header-logo">
+                <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип Nerds">
             </a>
 
             <ul class="site-navigation">
                 <li><a href="#">Студия</a></li>
-                <li><a href="#">Клиенты</a></li>
-                <li><a href="#">Магазин</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#partners">Клиенты</a></li>
+                <li><a href="catalog.html">Магазин</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
 
-            <!-- Тут только корзина, не уверен что надо делать список -->
             <ul class="user-navigation">
                 <li class="cart">Корзина</li>
             </ul>
@@ -31,7 +30,6 @@
     </header>
 
     <main class="container">
-
         <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
 
         <!-- Слайдер -->
@@ -43,12 +41,12 @@
                     <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
                     <a class="button" href="#">Узнать больше</a>
                 </li>
-                <li class="slider-item">
+                <li class="slider-item visually-hidden">
                     <b>Любим математику как никто другой</b>
                     <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                     <a class="button" href="#">Узнать больше</a>
                 </li>
-                <li class="slider-item">
+                <li class="slider-item visually-hidden">
                     <b>Только ночь, только хардкор</b>
                     <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                     <a class="button" href="#">Узнать больше</a>
@@ -61,6 +59,7 @@
                 <button class="toggles-item"><span class="visually-hidden">Слайд 3</span></button>
             </div>
         </section>
+        <!-- Конец слайдера -->
 
         <!-- Раздел с услугами -->
         <section class="services">
@@ -125,20 +124,21 @@
         </section>
 
         <!-- Раздел с портфолио -->
-        <section class="portfolio">
+        <section class="partners">
             <h2 class="visually-hidden">Портфолио</h2>
-            <ul class="portfolio-list">
-                <li class="portfolio-item">
-                    <a href=""><img src="" alt="Htmlacademy"></a>
+            <a name="partners"></a>
+            <ul class="partners-list">
+                <li class="partners-item">
+                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/img-partners-1.png" width="199" height="68" alt="Htmlacademy"></a>
                 </li>
-                <li class="portfolio-item">
-                    <a href=""><img src="" alt="Барбершоп Бородинский"></a>
+                <li class="partners-item">
+                    <a href="#"><img src="img/img-partners-2.png" width="209" height="90" alt="Барбершоп Бородинский"></a>
                 </li>
-                <li class="portfolio-item">
-                    <a href=""><img src="" alt="Pink"></a>
+                <li class="partners-item">
+                    <a href="#"><img src="img/img-partners-3.png" width="185" height="52" alt="Приложение Pink"></a>
                 </li>
-                <li class="portfolio-item">
-                    <a href=""><img src="" alt="Мишка"></a>
+                <li class="partners-item">
+                    <a href="#"><img src="img/img-partners-4.png" width="173" height="84" alt="Мишка"></a>
                 </li>
             </ul>
         </section>
@@ -148,9 +148,10 @@
     <footer class="main-footer">
 
         <!-- Контакты и карта -->
+        <a name="contacts"></a>
         <section class="contacts">
             <h2 class="visually-hidden">Контакты</h2>
-            <img src="" alt="Мы на карте">
+            <img src="img/map.png" width="1440" height="416" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
             <div>
                 <b>Nёrds design studio</b>
                 <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
@@ -159,7 +160,6 @@
             </div>
         </section>
 
-        <!-- Подумать над классами -->
         <section class="footer">
             <div class="footer-social">
                 <ul>
@@ -198,10 +198,10 @@
                 <label for="">Текст письма:</label>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
             </p>
-            <input type="submit" value="Отправить">
+            <button type="submit">Отправить</button>
         </form>
 
-        <a class="button" href="">Отправить</a>
+        <a class="button" href="#">Отправить</a>
     </section>
 
 </body>
