@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/*тут еще надо крепко подумать, т.к. конопок-нессылок у меня нет*/
+
+.button {
+    font: inherit;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.site-navigation,
+.user-navigation,
+.slider-list,
+.services-list,
+.info-info-services-list,
+.partners-list {
+    list-style: none;
+}
+
+.main-header {
+    background-color: #eeeeee;
+}
+
+.main-navigation {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 49px;
+    justify-content: space-between;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.main-header-logo {
+    width: 160px;
+    height: 65px;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+    opacity: 0.8;
+}
+
+.main-header-logo:active {
+    opacity: 0.3;
+}
+
+.site-navigation,
+.user-navigation {
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+}
+
+.site-navigation-current {
+    border-bottom: 2px solid #fb565a;
+}
+
+.user-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+}
+
+.site-navigation a,
+.user-navigation a {
+    display: block;
+    padding: 26px 24px;
+    color: #000000;
+}
+
+.user-navigation .cart {
+    padding-left: 80px;
+    padding-right: 0;
+    position: relative;
+}
+
+.user-navigation .cart::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-image: url(../img/icon-cart.svg);
+    top: 33px;
+    left: 40px;
+    opacity: 0.3;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.slider {
+    position: relative;
+    background-color: #eeeeee;
+    margin-bottom: 80px;
+}
+
+.slider-list {
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 175px;
+}
+
+.slider-list b {
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.slider-list p {
+    color: #283136;
+}
+
+.slider-list a {
+    display: inline-block;
+    background-color: #fb565a;
+    padding: 10px 55px;
+    border-radius: 2px;
+}
+
+.slider-item {
+    width: 560px;
+}
+
+.slider-img {
+    background-repeat: no-repeat;
+}
+
+
+/* пока так, потом переделаю */
+
+.toggles {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.slider-item:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/img-slider-1.png);
+    width: 698px;
+    height: 413px;
+}
+
+.slider-item:nth-child(2)::after {
+    content: "";
+    background-image: url(../img/img-slider-2.png);
+    width: 663px;
+    height: 430px;
+}
+
+.slider-item:nth-child(3)::after {
+    content: "";
+    background-image: url(../img/img-slider-3.png);
+    width: 759px;
+    height: 411px;
+}
+
+.services {
+    border-bottom: 2px solid #eeeeee;
+}
+
+.services-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-list h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.services-item {
+    width: 260px;
+}
+
+.services-item b {
+    padding: 0;
+    margin: 0;
+}
+
+.services-item p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.services-item a {
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 2px;
+    margin-bottom: 80px;
+}
+
+.services-item:nth-child(1) a {
+    background-color: #fb565a;
+}
+
+.services-item:nth-child(2) a {
+    background-color: #00ca74;
+}
+
+.services-item:nth-child(3) a {
+    background-color: #efc84a;
+}
+
+.services-item::before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 146px;
+}
+
+.services-item:nth-child(1)::before {
+    background-image: url(../img/img-services-1.png);
+}
+
+.services-item:nth-child(2)::before {
+    background-image: url(../img/img-services-2.png);
+}
+
+.services-item:nth-child(3)::before {
+    background-image: url(../img/img-services-3.png);
+}
