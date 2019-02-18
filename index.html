@@ -11,56 +11,64 @@
 
 <body>
     <header class="main-header">
-        <!-- Меню навигации по сайту -->
-        <nav class="main-navigation">
-            <a class="main-header-logo">
-                <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип Nerds">
-            </a>
+        <div class="container">
+            <!-- Меню навигации по сайту -->
+            <nav class="main-navigation">
+                <a class="main-header-logo">
+                    <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип Nerds">
+                </a>
 
-            <ul class="site-navigation">
-                <li class="site-navigation-current"><a href="#">Студия</a></li>
-                <li><a href="#partners">Клиенты</a></li>
-                <li><a href="catalog.html">Магазин</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-            </ul>
+                <ul class="site-navigation">
+                    <li class="site-navigation-current"><a href="#">Студия</a></li>
+                    <li><a href="#partners">Клиенты</a></li>
+                    <li><a href="catalog.html">Магазин</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
 
-            <ul class="user-navigation">
-                <li><a class="cart" href="">Корзина</a></li>
-            </ul>
-        </nav>
+                <ul class="user-navigation">
+                    <li><a class="cart" href="">Корзина</a></li>
+                </ul>
+            </nav>
+
+            <!-- Слайдер -->
+            <section class="slider">
+                <h2 class="visually-hidden">Слайдер</h2>
+                <ul class="slider-list">
+                    <li class="slider-item">
+                        <div class="slider-item-content">
+                            <b>Долго, дорого, скрупулезно.</b>
+                            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                            <a class="button" href="#">Узнать больше</a>
+                        </div>
+                    </li>
+                    <li class="slider-item visually-hidden">
+                        <div class="slider-item-content">
+                            <b>Любим математику как никто другой</b>
+                            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                            <a class="button" href="#">Узнать больше</a>
+                        </div>
+                    </li>
+                    <li class="slider-item visually-hidden">
+                        <div class="slider-item-content">
+                            <b>Только ночь,<br> только хардкор</b>
+                            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                            <a class="button" href="#">Узнать больше</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="toggles">
+                    <button class="toggles-item toggles-item-active" type="button"><span class="visually-hidden">Слайд 1</span></button>
+                    <button class="toggles-item" type="button"><span class="visually-hidden">Слайд 2</span></button>
+                    <button class="toggles-item" type="button"><span class="visually-hidden">Слайд 3</span></button>
+                </div>
+            </section>
+            <!-- Конец слайдера -->
+        </div>
     </header>
 
     <main class="container">
         <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
-
-        <!-- Слайдер -->
-        <section class="slider">
-            <h2 class="visually-hidden">Слайдер</h2>
-            <ul class="slider-list">
-                <li class="slider-item">
-                    <b>Долго, дорого, скрупулезно.</b>
-                    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                    <a class="button" href="#">Узнать больше</a>
-                </li>
-                <li class="slider-item visually-hidden">
-                    <b>Любим математику как никто другой</b>
-                    <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                    <a class="button" href="#">Узнать больше</a>
-                </li>
-                <li class="slider-item visually-hidden">
-                    <b>Только ночь, только хардкор</b>
-                    <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                    <a class="button" href="#">Узнать больше</a>
-                </li>
-            </ul>
-
-            <div class="toggles">
-                <button class="toggles-item" type="button"><span class="visually-hidden">Слайд 1</span></button>
-                <button class="toggles-item" type="button"><span class="visually-hidden">Слайд 2</span></button>
-                <button class="toggles-item" type="button"><span class="visually-hidden">Слайд 3</span></button>
-            </div>
-        </section>
-        <!-- Конец слайдера -->
 
         <!-- Раздел с услугами -->
         <section class="services">
