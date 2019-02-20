@@ -227,6 +227,7 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
     border: 5px solid #ffffff;
     background-color: #ffffff;
+    cursor: pointer;
 }
 
 .toggles-item:last-child {
@@ -356,4 +357,24 @@ input[type="radio"].visually-hidden {
     display: flex;
     border-bottom: 2px solid #eeeeee;
     justify-content: space-between;
+}
+
+.info {
+    width: 700px;
+}
+
+.info b {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.info p {
+    margin: 0;
+    padding: 0;
+}
+
+.info-services-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
