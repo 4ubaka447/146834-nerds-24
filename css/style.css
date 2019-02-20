@@ -66,6 +66,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     line-height: 30px;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .main-header-logo {
@@ -95,26 +96,45 @@ input[type="radio"].visually-hidden {
     width: 600px;
 }
 
-.site-navigation-current {
-    border-bottom: 2px solid #fb565a;
-}
-
 .user-navigation {
     display: flex;
     flex-wrap: wrap;
     max-width: 200px;
 }
 
-.site-navigation a,
-.user-navigation a {
-    display: block;
-    padding: 26px 24px;
+.site-navigation li {
+    margin-left: 24px;
+    margin-right: 24px;
+    padding: 26px 0;
+}
+
+.site-navigation a {
     color: #000000;
 }
 
+.site-navigation a:not([href]) {
+    color: #a6a6a6;
+}
+
+.site-navigation-current {
+    position: relative;
+}
+
+.site-navigation-current::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 21px;
+    left: 0;
+    background-color: #fb565a;
+}
+
 .user-navigation .cart {
+    display: block;
+    padding: 26px 0;
+    color: #000000;
     padding-left: 80px;
-    padding-right: 0;
     position: relative;
 }
 
@@ -129,10 +149,10 @@ input[type="radio"].visually-hidden {
     opacity: 0.3;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.site-navigation a[href]:hover,
+.site-navigation a[href]:focus,
+.user-navigation a[href]:hover,
+.user-navigation a[href]:focus {
     color: #fb565a;
 }
 
@@ -188,7 +208,7 @@ input[type="radio"].visually-hidden {
 .slider-item-content {
     width: 560px;
     margin-bottom: 80px;
-    padding-top: 58px;
+    padding-top: 60px;
 }
 
 .toggles {
@@ -251,6 +271,7 @@ input[type="radio"].visually-hidden {
 /* стилизация раздела услуг */
 
 .services {
+    margin-bottom: 40px;
     border-bottom: 2px solid #eeeeee;
 }
 
@@ -285,6 +306,7 @@ input[type="radio"].visually-hidden {
 .services-item p {
     padding: 0;
     margin: 0;
+    margin-right: 40px;
     margin-bottom: 32px;
 }
 
@@ -329,3 +351,9 @@ input[type="radio"].visually-hidden {
 
 
 /* о нас и таблица преимуществ */
+
+.index-columns {
+    display: flex;
+    border-bottom: 2px solid #eeeeee;
+    justify-content: space-between;
+}
