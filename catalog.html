@@ -20,12 +20,11 @@
 
                 <ul class="site-navigation">
                     <li><a href="index.html">Студия</a></li>
-                    <li><a href="#">Клиенты</a></li>
+                    <li><a>Клиенты</a></li>
                     <li class="site-navigation-current"><a href="#">Магазин</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a>Контакты</a></li>
                 </ul>
 
-                <!-- Тут только корзина, не уверен что надо делать список -->
                 <ul class="user-navigation">
                     <li><a class="cart" href="">Корзина</a></li>
                 </ul>
@@ -233,40 +232,42 @@
     <footer class="main-footer">
 
         <!-- Контакты и карта -->
-        <a name="contacts"></a>
         <section class="contacts">
             <h2 class="visually-hidden">Контакты</h2>
-            <img src="img/map.png" width="1440" height="416" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-            <div>
-                <b>Nёrds design studio</b>
-                <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-                <p>тел. +7 (812) 275-75-75</p>
-                <a class="button" href="#">Напишите нам</a>
+            <div class="contacts-wrapper">
+                <img src="img/map.png" width="1440" height="416" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+                <div class="contacts-content">
+                    <b>Nёrds design studio</b>
+                    <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+                    <p>тел. +7 (812) 275-75-75</p>
+                    <a class="button" href="#">Напишите нам</a>
+                </div>
             </div>
         </section>
 
         <section class="footer">
-            <div class="footer-social">
-                <ul>
-                    <li>
-                        <a class="social-button" href="#">Вконтакте</a>
-                    </li>
-                    <li>
-                        <a class="social-button" href="#">Фейсбук</a>
-                    </li>
-                    <li>
-                        <a class="social-button" href="#">Инстаграмм</a>
-                    </li>
-                </ul>
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="footer-social">
+                <li>
+                    <a class="social-button social-button--vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
+                </li>
+                <li>
+                    <a class="social-button social-button--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+                </li>
+                <li>
+                    <a class="social-button social-button--insta" href="#"><span class="visually-hidden">Инстаграмм</span></a>
+                </li>
+            </ul>
+            <div class="footer-wrapper">
+                <b>Давайте дружить, это выгодно!</b>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
             </div>
-            <b>Давайте дружить, это выгодно!</b>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
 
     </footer>
 
     <!-- Скрытые окна -->
-    <section class="modal modal-feedback">
+    <section class="modal modal-feedback visually-hidden">
         <h2>Напишите нам</h2>
         <button class="modal-close" type="button">x</button>
         <!-- Форма -->
