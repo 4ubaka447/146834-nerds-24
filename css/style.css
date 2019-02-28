@@ -43,6 +43,11 @@ input[type="radio"].visually-hidden {
     line-height: 30px;
     text-transform: uppercase;
     color: #ffffff;
+    background-color: #fb565a;
+    border-radius: 2px;
+    border: none;
+    display: inline-block;
+    padding: 10px 40px;
 }
 
 .site-navigation,
@@ -185,6 +190,14 @@ input[type="radio"].visually-hidden {
     padding: 0;
 }
 
+.slider-item {
+    display: none;
+}
+
+.slider-item:nth-child(1) {
+    display: block;
+}
+
 .slider-item b {
     display: block;
     font-size: 55px;
@@ -200,10 +213,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item a {
-    display: inline-block;
-    background-color: #fb565a;
     padding: 10px 55px;
-    border-radius: 2px;
 }
 
 .slider-item-content a:hover {
@@ -290,6 +300,7 @@ input[type="radio"].visually-hidden {
     width: 1100px;
     padding: 0;
     margin: 0;
+    margin-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -320,14 +331,6 @@ input[type="radio"].visually-hidden {
     margin-right: 40px;
     margin-bottom: 32px;
     color: #283136;
-}
-
-.services-item a {
-    display: block;
-    width: min-content;
-    padding: 10px 40px;
-    border-radius: 2px;
-    margin-bottom: 80px;
 }
 
 .services-item:nth-child(1) a {
@@ -593,10 +596,8 @@ input[type="radio"].visually-hidden {
 
 .contacts-content a {
     display: block;
-    background-color: #fb565a;
     padding: 10px 44px;
     margin-top: 37px;
-    border-radius: 2px;
 }
 
 .contacts-content a:hover {
@@ -680,4 +681,198 @@ input[type="radio"].visually-hidden {
     margin: 0;
     margin-top: 9px;
     line-height: 22px;
+}
+
+
+/* модалка */
+
+.modal-feedback {
+    display: none;
+    position: fixed;
+    bottom: 193px;
+    left: 50%;
+    margin-left: -480px;
+    box-sizing: border-box;
+    width: 960px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 68px;
+    padding-bottom: 85px;
+    background-color: #ffffff;
+    box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.75);
+}
+
+.modal-feedback h2 {
+    font-size: 45px;
+    line-height: 45px;
+    margin: 0;
+    margin-bottom: 39px;
+}
+
+.modal-feedback label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feedback-item {
+    width: 360px;
+    margin: 0;
+    margin-bottom: 31px;
+}
+
+.feedback-item-textarea {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 37px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font: inherit;
+    color: #444444;
+    opacity: 0.5;
+    line-height: 18px;
+    border: 2px solid #d7dcde;
+    border-radius: 2px;
+    padding: 14px;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+    border-color: #b4b9bb;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    opacity: 1;
+    border-color: #000000;
+}
+
+.feedback-form input:invalid {
+    opacity: 1;
+    color: #e74246;
+    border-color: #e74246;
+}
+
+.feedback-form textarea:invalid {
+    opacity: 1;
+    color: #e74246;
+    border-color: #e74246;
+}
+
+.feedback-form-button {
+    width: 260px;
+}
+
+.feedback-form-button:hover {
+    background-color: #e74246;
+}
+
+.feedback-form-button:active {
+    background-color: #d7373b;
+    box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.modal-close {
+    width: 21px;
+    height: 21px;
+    font-size: 0;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 78px;
+    right: 90px;
+    background-color: #ffffff;
+    opacity: 0.3;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-close:active {
+    opacity: 0.1;
+}
+
+.modal-close::after,
+.modal-close::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -3px;
+    width: 27px;
+    height: 4px;
+    background-color: #e74246;
+}
+
+.modal-close::after {
+    transform: rotate(45deg);
+}
+
+.modal-close::before {
+    transform: rotate(-45deg);
+}
+
+
+/* страница каталога */
+
+
+/* футер */
+
+.page-title {
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 61px;
+    padding-bottom: 108px;
+}
+
+.catalog-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog {
+    width: 760px;
+}
+
+.catalog-filters {
+    width: 260px;
+}
+
+.catalog-filters fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-filters legend {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.catalog-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-item {
+    width: 360px;
 }
