@@ -838,14 +838,17 @@ input[type="radio"].visually-hidden {
     padding-bottom: 108px;
 }
 
+
+/* основная часть */
+
 .catalog-wrapper {
     display: flex;
     justify-content: space-between;
+    margin-top: 55px;
 }
 
-.catalog {
-    width: 760px;
-}
+
+/* блок фильтров */
 
 .catalog-filters {
     width: 260px;
@@ -864,6 +867,87 @@ input[type="radio"].visually-hidden {
     font-weight: bold;
 }
 
+.range-controls {
+    position: relative;
+    box-sizing: border-box;
+    height: 80px;
+    margin-top: 49px;
+    margin-bottom: 14px;
+    padding-top: 39px;
+    padding-left: 21px;
+    padding-right: 21px;
+    background-color: #eeeeee;
+    border-radius: 2px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background-color: #d7dcde;
+}
+
+.scale .bar {
+    /* левый край бара */
+    margin-left: 0;
+    /* правый край бара */
+    width: 50%;
+    height: 2px;
+    background-color: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ababab;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    /* левый ползунок */
+    left: 11px;
+}
+
+.range-controls .toggle-max {
+    /* правый ползунок */
+    left: 120px;
+}
+
+.price-controls label {
+    text-transform: uppercase;
+    color: #283136;
+}
+
+.price-controls input {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 2px;
+    width: 80px;
+    background-color: #eeeeee;
+    padding: 10px;
+    margin-left: 8px;
+    text-align: center;
+}
+
+.max-price {
+    margin-left: 28px;
+}
+
+.price-controls {
+    margin-bottom: 53px;
+}
+
+
+/* каталог */
+
+.catalog {
+    width: 760px;
+}
+
 .catalog-list {
     display: flex;
     list-style: none;
@@ -875,4 +959,63 @@ input[type="radio"].visually-hidden {
 
 .catalog-item {
     width: 360px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 33px;
+}
+
+.catalog-item img {
+    display: block;
+}
+
+.catalog-item::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 40px;
+    opacity: 0.12;
+    background-image: url(../img/catalog-item-header.svg);
+}
+
+.activ-block {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #eeeeee;
+    opacity: 0;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 43px;
+}
+
+.activ-block h3 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.activ-block p {
+    margin: 0;
+    padding: 0;
+}
+
+.activ-block a {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+.catalog-item:hover {
+    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.catalog-item:hover::before {
+    opacity: 1;
+}
+
+.catalog-item:hover .activ-block {
+    opacity: 1;
 }

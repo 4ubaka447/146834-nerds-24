@@ -42,13 +42,21 @@
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <form action="#" class="filter" method="GET">
                     <fieldset>
-                        <!-- Незаконченная часть -->
                         <legend>Cтоимость:</legend>
-                        <label for="cost-from">От</label>
-                        <input type="text" id="cost-from" name="inside" value="0">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="toggle toggle-min"></div>
+                            <div class="toggle toggle-max"></div>
+                        </div>
+                        <div class="price-controls">
+                            <label class="min-price" for="cost-from">От</label>
+                            <input type="text" id="cost-from" name="inside" value="0">
 
-                        <label for="cost-to">До</label>
-                        <input type="text" id="cost-to" name="out" value="15000">
+                            <label class="max-price" for="cost-to">До</label>
+                            <input type="text" id="cost-to" name="out" value="15000">
+                        </div>
                     </fieldset>
 
                     <fieldset>
@@ -110,11 +118,6 @@
                 <ul class="catalog-list">
                     <!-- 1 -->
                     <li class="catalog-item">
-                        <div class="item-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
                         <img src="img/img-catalog-1.jpg" width="360" height="576" alt="Sedona">
                         <div class="activ-block">
                             <h3>
@@ -128,11 +131,6 @@
                     </li>
                     <!-- 2 -->
                     <li class="catalog-item">
-                        <div class="item-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
                         <img src="img/img-catalog-2.jpg" width="360" height="576" alt="Pink App">
                         <div class="activ-block">
                             <h3>
@@ -146,11 +144,6 @@
                     </li>
                     <!-- 3 -->
                     <li class="catalog-item">
-                        <div class="item-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
                         <img src="img/img-catalog-3.jpg" width="360" height="576" alt="Barbershop">
                         <div class="activ-block">
                             <h3>
@@ -164,11 +157,6 @@
                     </li>
                     <!-- 4 -->
                     <li class="catalog-item">
-                        <div class="item-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
                         <img src="img/img-catalog-4.jpg" width="360" height="576" alt="Mishka">
                         <div class="activ-block">
                             <h3>
@@ -182,11 +170,6 @@
                     </li>
                     <!-- 5 -->
                     <li class="catalog-item">
-                        <div class="item-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
                         <img src="img/img-catalog-5.jpg" width="360" height="576" alt="A Plus">
                         <div class="activ-block">
                             <h3>
@@ -200,11 +183,6 @@
                     </li>
                     <!-- 6 -->
                     <li class="catalog-item">
-                        <div class="item-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
                         <img src="img/img-catalog-6.jpg" width="360" height="576" alt="Кваст">
                         <div class="activ-block">
                             <h3>
