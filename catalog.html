@@ -110,9 +110,25 @@
             <section class="catalog">
                 <h2 class="visually-hidden">Список готовых шаблонов</h2>
 
-                <!-- Тут будет сортировка -->
                 <div class="catalog-sorting">
-                    <span>Сортировать</span>
+                    <h3>Сортировать:</h3>
+                    <ul class="sorting-list">
+                        <li class="sorting-item"><a href="#">По цене</a></li>
+                        <li class="sorting-item sorting-item--inactive"><a href="#">По типу</a></li>
+                        <li class="sorting-item sorting-item--inactive"><a href="#">По названию</a></li>
+                    </ul>
+                    <ul class="sorting-direction">
+                        <li class="direction-item">
+                            <a href="#" class="direction-link direction-link--down">
+                                <span class="visually-hidden">По убыванию</span>
+                            </a>
+                        </li>
+                        <li class="direction-item">
+                            <a href="#" class="direction-link direction-link--up direction-link--inactive">
+                                <span class="visually-hidden">По возрастанию</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
                 <ul class="catalog-list">
@@ -196,10 +212,10 @@
                     </li>
                 </ul>
                 <ul class="pagination-list">
-                    <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                    <li class="pagination-item pagination-item--current"><a href="#">1</a></li>
                     <li class="pagination-item"><a href="#">2</a></li>
                     <li class="pagination-item"><a href="#">3</a></li>
-                    <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+                    <li class="pagination-item"><a href="#">Следующая</a></li>
                 </ul>
             </section>
         </div>
