@@ -606,10 +606,18 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
 }
 
+.map-iframe {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 416px;
+}
+
 .contacts-content {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: absolute;
+    z-index: 2;
     top: 54px;
     left: 140px;
     width: 320px;
