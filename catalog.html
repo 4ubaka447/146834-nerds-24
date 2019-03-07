@@ -20,13 +20,13 @@
 
                 <ul class="site-navigation">
                     <li><a href="index.html">Студия</a></li>
-                    <li><a>Клиенты</a></li>
+                    <li><a href="#">Клиенты</a></li>
                     <li class="site-navigation-current"><a href="#">Магазин</a></li>
-                    <li><a>Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
 
                 <ul class="user-navigation">
-                    <li><a class="cart" href="">Корзина</a></li>
+                    <li><a class="cart" href="#">Корзина</a></li>
                 </ul>
             </nav>
 
@@ -63,15 +63,15 @@
                         <legend>Сетка:</legend>
                         <ul>
                             <li class="filter-option">
-                                <input type="radio" class="filter-input filter-input-radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                                <input type="radio" class="visually-hidden filter-input filter-input-radio" name="grid" value="adaptive" id="filter-adaptive" checked>
                                 <label for="filter-adaptive">Адаптивная</label>
                             </li>
                             <li class="filter-option">
-                                <input type="radio" class="filter-input filter-input-radio" name="grid" value="static" id="filter-static">
+                                <input type="radio" class="visually-hidden filter-input filter-input-radio" name="grid" value="static" id="filter-static">
                                 <label for="filter-static">Фиксированная</label>
                             </li>
                             <li class="filter-option">
-                                <input type="radio" class="filter-input filter-input-radio" name="grid" value="fluid" id="filter-fluid">
+                                <input type="radio" class="visually-hidden filter-input filter-input-radio" name="grid" value="fluid" id="filter-fluid">
                                 <label for="filter-fluid">Резиновая</label>
                             </li>
                         </ul>
@@ -113,9 +113,9 @@
                 <div class="catalog-sorting">
                     <h3>Сортировать:</h3>
                     <ul class="sorting-list">
-                        <li class="sorting-item"><a href="#">По цене</a></li>
-                        <li class="sorting-item sorting-item--inactive"><a href="#">По типу</a></li>
-                        <li class="sorting-item sorting-item--inactive"><a href="#">По названию</a></li>
+                        <li class="sorting-item sorting-item--active"><a href="#">По цене</a></li>
+                        <li class="sorting-item"><a href="#">По типу</a></li>
+                        <li class="sorting-item"><a href="#">По названию</a></li>
                     </ul>
                     <ul class="sorting-direction">
                         <li class="direction-item">
@@ -135,11 +135,9 @@
                     <!-- 1 -->
                     <li class="catalog-item">
                         <img src="img/img-catalog-1.jpg" width="360" height="576" alt="Sedona">
-                        <div class="activ-block">
+                        <div class="active-block">
                             <h3>
-                                <a href="#">
-                                    <span>Sedona</span>
-                                </a>
+                                <a href="#">Sedona</a>
                             </h3>
                             <p>Информационный сайт для туристов</p>
                             <a class="button" href="#">9 900 руб.</a>
@@ -148,11 +146,9 @@
                     <!-- 2 -->
                     <li class="catalog-item">
                         <img src="img/img-catalog-2.jpg" width="360" height="576" alt="Pink App">
-                        <div class="activ-block">
+                        <div class="active-block">
                             <h3>
-                                <a href="#">
-                                    <span>Pink App</span>
-                                </a>
+                                <a href="#">Pink App</a>
                             </h3>
                             <p>Продуктовый лендинг приложения для iOS и Android</p>
                             <a class="button" href="#">9 900 руб.</a>
@@ -161,11 +157,9 @@
                     <!-- 3 -->
                     <li class="catalog-item">
                         <img src="img/img-catalog-3.jpg" width="360" height="576" alt="Barbershop">
-                        <div class="activ-block">
+                        <div class="active-block">
                             <h3>
-                                <a href="#">
-                                    <span>Barbershop</span>
-                                </a>
+                                <a href="#">Barbershop</a>
                             </h3>
                             <p>Сайт салоны красоты. Для мужчин, да.</p>
                             <a class="button" href="#">9 900 руб.</a>
@@ -174,11 +168,9 @@
                     <!-- 4 -->
                     <li class="catalog-item">
                         <img src="img/img-catalog-4.jpg" width="360" height="576" alt="Mishka">
-                        <div class="activ-block">
+                        <div class="active-block">
                             <h3>
-                                <a href="#">
-                                    <span>Mishka</span>
-                                </a>
+                                <a href="#">Mishka</a>
                             </h3>
                             <p>Интернет-магазин вязаных игрушек</p>
                             <a class="button" href="#">9 900 руб.</a>
@@ -187,11 +179,9 @@
                     <!-- 5 -->
                     <li class="catalog-item">
                         <img src="img/img-catalog-5.jpg" width="360" height="576" alt="A Plus">
-                        <div class="activ-block">
+                        <div class="active-block">
                             <h3>
-                                <a href="#">
-                                    <span>A Plus</span>
-                                </a>
+                                <a href="#">A Plus</a>
                             </h3>
                             <p>Лендинг курсов повышения квалификации</p>
                             <a class="button" href="#">9 900 руб.</a>
@@ -200,11 +190,9 @@
                     <!-- 6 -->
                     <li class="catalog-item">
                         <img src="img/img-catalog-6.jpg" width="360" height="576" alt="Кваст">
-                        <div class="activ-block">
+                        <div class="active-block">
                             <h3>
-                                <a href="#">
-                                    <span>Кваст</span>
-                                </a>
+                                <a href="#">Кваст</a>
                             </h3>
                             <p>Промо-сайт производителя крафтового кваса</p>
                             <a class="button" href="#">9 900 руб.</a>
@@ -212,10 +200,10 @@
                     </li>
                 </ul>
                 <ul class="pagination-list">
-                    <li class="pagination-item pagination-item--current"><a href="#">1</a></li>
+                    <li class="pagination-item pagination-item--current"><a>1</a></li>
                     <li class="pagination-item"><a href="#">2</a></li>
                     <li class="pagination-item"><a href="#">3</a></li>
-                    <li class="pagination-item"><a href="#">Следующая</a></li>
+                    <li class="pagination-item pagination-item--switch"><a href="#">Следующая</a></li>
                 </ul>
             </section>
         </div>
@@ -234,8 +222,8 @@
                 <img src="img/map.png" width="1440" height="416" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
                 <div class="contacts-content">
                     <b>Nёrds design studio</b>
-                    <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-                    <p>тел. +7 (812) 275-75-75</p>
+                    <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                    <p x-ms-format-detection="none">тел. +7 (812) 275-75-75</p>
                     <a class="button writeus-link" href="#">Напишите нам</a>
                 </div>
             </div>
@@ -284,7 +272,7 @@
     </section>
 
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>

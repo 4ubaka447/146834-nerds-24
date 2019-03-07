@@ -19,15 +19,15 @@
                 </a>
 
                 <ul class="site-navigation">
-                    <li class="site-navigation-current"><a href="#">Студия</a></li>
-                    <li><a>Клиенты</a></li>
+                    <li><a href="#">Студия</a></li>
+                    <li><a href="#">Клиенты</a></li>
                     <li><a href="catalog.html">Магазин</a></li>
-                    <li><a>Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
 
-                <ul class="user-navigation">
-                    <li><a class="cart" href="">Корзина</a></li>
-                </ul>
+                <div class="user-navigation">
+                    <a class="cart" href="#">Корзина</a>
+                </div>
             </nav>
 
             <!-- Слайдер -->
@@ -74,17 +74,17 @@
         <section class="services">
             <h2 class="visually-hidden">Наши услуги</h2>
             <ul class="services-list">
-                <li class="services-item">
+                <li class="services-item services-item--red">
                     <h3>Веб-сайты</h3>
                     <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                     <a class="button" href="#">Заказать</a>
                 </li>
-                <li class="services-item">
+                <li class="services-item services-item--green">
                     <h3>Приложения</h3>
                     <p>Покорите топ-10 приложений в AppStore и Google Play</p>
                     <a class="button" href="#">Заказать</a>
                 </li>
-                <li class="services-item">
+                <li class="services-item services-item--yellow">
                     <h3>Презентации</h3>
                     <p>Вы даже не подозреваете, насколько вы изумительны!</p>
                     <a class="button" href="#">Заказать</a>
@@ -98,7 +98,6 @@
                 <h2 class="visually-hidden">Информация о нас</h2>
                 <b>Мы — маленькая, но гордая дизайн-студия из Краснодара. </b>
                 <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-                <!-- div объединяет абзац и список. Нужен ли? Надо подумать -->
                 <div class="info-services">
                     <p>Выполняем заказы на разработку:</p>
                     <ul class="info-services-list">
@@ -110,7 +109,6 @@
             </section>
 
             <!-- Таблица с преимуществами -->
-            <!-- Имена классов не очень. Подумать, может стоит поменять?-->
             <section class="features">
                 <h2 class="visually-hidden">Преимущества</h2>
                 <table class="features-table">
@@ -168,8 +166,8 @@
                 <img src="img/map.png" width="1440" height="416" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
                 <div class="contacts-content">
                     <b>Nёrds design studio</b>
-                    <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-                    <p>тел. +7 (812) 275-75-75</p>
+                    <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                    <p x-ms-format-detection="none">тел. +7 <span>(812) 275</span>-75-75</p>
                     <a class="button writeus-link" href="#">Напишите нам</a>
                 </div>
             </div>
@@ -219,7 +217,7 @@
     </section>
 
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>
