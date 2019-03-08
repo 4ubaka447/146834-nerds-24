@@ -92,12 +92,6 @@ input[type="radio"].visually-hidden {
     opacity: 0.3;
 }
 
-.site-navigation,
-.user-navigation {
-    margin: 0;
-    padding: 0;
-}
-
 .site-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -105,16 +99,8 @@ input[type="radio"].visually-hidden {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 500px;
-}
-
-.user-navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    max-width: 200px;
-    margin-left: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .site-navigation li {
@@ -146,15 +132,17 @@ input[type="radio"].visually-hidden {
     background-color: #fb565a;
 }
 
-.user-navigation .cart {
+.cart {
     display: block;
     padding: 26px 0;
     color: #000000;
     padding-left: 80px;
     position: relative;
+    max-width: 200px;
+    margin-left: auto;
 }
 
-.user-navigation .cart::before {
+.cart::before {
     content: "";
     width: 15px;
     height: 15px;
@@ -167,13 +155,13 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a:hover,
 .site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.cart:hover,
+.cart:focus {
     color: #fb565a;
 }
 
 .site-navigation a:active,
-.user-navigation a:active {
+.cart:active {
     color: #000000;
     opacity: 0.3;
 }
